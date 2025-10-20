@@ -1,10 +1,10 @@
 /* Import our custom styles */
-@import './styles/colors.css';
-@import './styles/typography.css';
-@import './styles/components.css';
-@import './styles/themes.css';
-@import './styles/pokemon-card.css';
-/* @import './styles/work-experience.css'; */
+@import './styles/Shared/colors.css';
+@import './styles/Shared/typography.css';
+@import './styles/Shared/components.css';
+@import './styles/Shared/themes.css';
+@import './styles/Introduction/pokemon-card.css';
+@import './styles/WorkExperience/work-experience.css';
 
 /* Global Reset and Base Styles */
 * {

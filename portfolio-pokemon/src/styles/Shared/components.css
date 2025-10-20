@@ -16,6 +16,8 @@
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 2px 4px var(--shadow-light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .btn:hover {
@@ -95,6 +97,8 @@
   border: 2px solid var(--border-light);
   border-radius: 0.5rem;
   transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .input:focus {
@@ -118,6 +122,8 @@
   color: var(--text-primary);
   border-radius: 1rem;
   border: 1px solid var(--border-light);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 
 .badge-primary {

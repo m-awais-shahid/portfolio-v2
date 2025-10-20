@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import portfolioData from '../data/portfolioData.json';
-import '../styles/pokemon-card.css';
+import portfolioData from '../../data/portfolioData.json';
+import '../../styles/Introduction/pokemon-card.css';
 
 const PokemonCard = () => {
   const { personalInfo, topSkills } = portfolioData;

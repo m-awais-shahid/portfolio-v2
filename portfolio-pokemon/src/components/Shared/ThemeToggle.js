@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../styles/themes.css';
+import '../../styles/Shared/themes.css';
 
 const ThemeToggle = () => {
   const [isDark, setIsDark] = useState(false);
@@ -33,7 +33,6 @@ const ThemeToggle = () => {
 
   return (
     <button className="theme-toggle" onClick={toggleTheme}>
-      <span className={`icon ${isDark ? 'sun' : 'moon'}`}></span>
       {isDark ? 'Light Mode' : 'Dark Mode'}
     </button>
   );

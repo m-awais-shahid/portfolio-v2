@@ -1,181 +1,166 @@
 {
   "personalInfo": {
     "fullName": "Muhammad Awais Shahid",
+    "title": "Software Engineer",
+    "phone": "+49 176 724 77802",
+    "email": "awaishahid.147@gmail.com",
+    "location": "Berlin, Germany",
+    "linkedin": "https://www.linkedin.com/in/awais-shahid/",
+    "github": "https://github.com/m-awais-shahid",
     "profilePicture": "/Muhammad-Awais-Shahid.jpg",
-    "description": "Skilled Full stack JavaScript developer with 2 years of experience in various industries, including telecommunication, e-commerce and B2B. Demonstrated capability in managing projects from conception to completion, working closely with stakeholders to design and implement solutions. Proficient in JavaScript, React.js, Redux, Next.js, Node.js and UI libraries. Dedicated to crafting user-friendly, scalable and secure systems.",
+    "description": "Dedicated JavaScript developer with 2 years of experience in web application development. Specializes in React, TypeScript, and UI optimization, with a passion for delivering performant and scalable solutions. Proficient at cross-functional teamwork, clean code practices, and crafting user-centric interfaces.",
     "resumeLink": "/documents/resume.pdf"
   },
   "topSkills": [
-    "Frontend Developer",
+    "Software Engineer",
     "JavaScript Developer",
     "Full-Stack Developer"
   ],
   "workExperience": [
     {
       "id": 1,
-      "company": "Tech Solutions Inc.",
-      "position": "Senior Full-Stack Developer",
-      "duration": "2022 - Present",
-      "location": "Remote",
-      "description": "Led development of multiple web applications using React, Node.js, and cloud technologies. Mentored junior developers and implemented best practices for code quality and performance.",
-      "technologies": ["React", "Node.js", "AWS", "MongoDB", "TypeScript"]
+      "company": "MERN Solutions",
+      "position": "Associate Software Engineer",
+      "duration": "06/2023 – Present",
+      "location": "Remote | Lahore, Pakistan",
+      "description": "Implement responsive and accessible UIs using React, improving user engagement by 30%. Manage application state using modern tools, reducing state-related bugs by 40% and improving development. Collaborate closely with backend and QA teams to plan and deliver features on biweekly sprints, achieving 95% sprint completion rate.",
+      "technologies": ["React", "TypeScript", "JavaScript", "State Management", "Agile", "Scrum"]
     },
     {
       "id": 2,
-      "company": "Digital Innovations",
-      "position": "Frontend Developer",
-      "duration": "2020 - 2022",
-      "location": "New York, NY",
-      "description": "Developed responsive web applications and user interfaces. Collaborated with design teams to implement pixel-perfect designs and optimize user experience.",
-      "technologies": ["React", "JavaScript", "CSS3", "HTML5", "Redux"]
-    },
-    {
-      "id": 3,
-      "company": "StartupXYZ",
-      "position": "Junior Web Developer",
-      "duration": "2019 - 2020",
-      "location": "San Francisco, CA",
-      "description": "Built and maintained web applications from scratch. Gained experience in full-stack development and agile methodologies.",
-      "technologies": ["JavaScript", "Python", "Django", "PostgreSQL", "Git"]
+      "company": "NetixSol",
+      "position": "Full Stack Intern",
+      "duration": "07/2022 – 09/2022",
+      "location": "On-site | Faisalabad, Pakistan",
+      "description": "Implemented full-stack features using the MERN stack – enhancing coding accuracy by 40%. Coordinated with an Agile team to deliver two feature-complete web apps – increasing 500+ monthly users. Organized code reviews and participated in sprint planning, boosting team workflow quality and reducing merge conflicts by 20%.",
+      "technologies": ["MERN Stack", "MongoDB", "Express.js", "React", "Node.js", "Agile", "Code Reviews"]
     }
   ],
   "education": [
     {
       "id": 1,
-      "institution": "University of Technology",
-      "degree": "Bachelor of Science in Computer Science",
-      "duration": "2015 - 2019",
-      "location": "California, USA",
-      "description": "Graduated with honors. Focused on software engineering, algorithms, and web development. Completed capstone project on machine learning applications.",
-      "gpa": "3.8/4.0"
+      "institution": "Brandenburgische Technische Universität Cottbus-Senftenberg (BTU)",
+      "degree": "Master of Science in Artificial Intelligence",
+      "duration": "10/2023 – Present",
+      "location": "Cottbus, Germany",
+      "description": "Currently pursuing advanced studies in Artificial Intelligence with focus on machine learning, deep learning, and AI applications in software development.",
+      "gpa": "In Progress"
     },
     {
       "id": 2,
-      "institution": "Code Academy",
-      "degree": "Full-Stack Web Development Certificate",
-      "duration": "2019",
-      "location": "Online",
-      "description": "Intensive bootcamp covering modern web development technologies including React, Node.js, databases, and deployment strategies.",
-      "gpa": "N/A"
+      "institution": "The National University of Computer and Emerging Sciences (FAST)",
+      "degree": "Bachelor of Science in Computer Science",
+      "duration": "08/2019 – 06/2023",
+      "location": "Faisalabad, Pakistan",
+      "description": "Graduated with comprehensive knowledge in computer science fundamentals, software engineering, algorithms, and data structures. Focused on web development and modern programming practices.",
+      "gpa": "Completed"
     }
   ],
   "projects": [
     {
       "id": 1,
-      "name": "E-Commerce Platform",
-      "description": "A full-stack e-commerce solution built with React, Node.js, and MongoDB. Features include user authentication, payment processing, inventory management, and admin dashboard.",
-      "technologies": ["React", "Node.js", "MongoDB", "Stripe API", "JWT"],
-      "liveLink": "https://ecommerce-demo.vercel.app",
-      "githubLink": "https://github.com/m-awais-shahid/ecommerce-platform",
-      "image": "/images/projects/ecommerce.jpg",
-      "featured": true
+      "name": "Joey Joey: Empowering Social Events",
+      "description": "Developed dynamic event interfaces using React and RSVP — increasing user engagement by 30%. A comprehensive social events platform that enables users to create, discover, and manage social events with real-time RSVP functionality.",
+      "technologies": ["React", "JavaScript", "Node.js"],
+      "liveLink": "https://joey-joey-demo.vercel.app",
+      "githubLink": "https://github.com/m-awais-shahid/joey-joey",
+      "image": "/images/projects/joey-joey.jpg",
+      "featured": true,
+      "duration": "06/2024 – Present"
     },
     {
       "id": 2,
-      "name": "Task Management App",
-      "description": "A collaborative task management application with real-time updates, team collaboration features, and project tracking capabilities.",
-      "technologies": ["React", "Socket.io", "Express", "PostgreSQL", "Redis"],
-      "liveLink": "https://taskmanager-demo.netlify.app",
-      "githubLink": "https://github.com/m-awais-shahid/task-manager",
-      "image": "/images/projects/taskmanager.jpg",
-      "featured": true
+      "name": "Shopper: Promoting Eco-Friendly Shopping Habits",
+      "description": "Developed a strategic plan to promote eco-friendly shopping, designed to reach 1000+ users and increase sustainable fashion awareness. An e-commerce platform focused on sustainable and eco-friendly products with educational content about environmental impact.",
+      "technologies": ["React.js", "Express.js", "Node.js","mysql"],
+      "liveLink": "https://shopper-eco-demo.netlify.app",
+      "githubLink": "https://github.com/m-awais-shahid/shopper-eco",
+      "image": "/images/projects/shopper.jpg",
+      "featured": true,
+      "duration": "07/2022 – 09/2022"
     },
     {
       "id": 3,
-      "name": "Weather Dashboard",
-      "description": "A responsive weather application that provides current weather conditions, forecasts, and location-based weather data with interactive maps.",
-      "technologies": ["React", "OpenWeather API", "Chart.js", "CSS3"],
-      "liveLink": "https://weather-dashboard-demo.herokuapp.com",
-      "githubLink": "https://github.com/m-awais-shahid/weather-dashboard",
-      "image": "/images/projects/weather.jpg",
-      "featured": false
-    },
-    {
-      "id": 4,
-      "name": "Portfolio Website",
-      "description": "A modern, responsive portfolio website showcasing my work and skills. Built with React and styled with modern CSS techniques.",
-      "technologies": ["React", "CSS3", "JavaScript", "Netlify"],
-      "liveLink": "https://awais-portfolio.netlify.app",
-      "githubLink": "https://github.com/m-awais-shahid/portfolio-v2",
-      "image": "/images/projects/portfolio.jpg",
-      "featured": true
+      "name": "CL Bot: AI Assistant for Productivity",
+      "description": "Launched an intelligent assistant for task scheduling — reducing missed tasks by 200+ per month. An AI-powered productivity bot that helps users manage their schedules, set reminders, and optimize their daily workflow.",
+      "technologies": ["React.js", "Node.js", "MongoDB"],
+      "liveLink": "https://cl-bot-demo.herokuapp.com",
+      "githubLink": "https://github.com/m-awais-shahid/cl-bot",
+      "image": "/images/projects/cl-bot.jpg",
+      "featured": false,
+      "duration": "10/2021 – 12/2021"
     }
   ],
   "skills": [
-    "React",
     "JavaScript",
     "TypeScript",
-    "HTML5",
-    "CSS3",
-    "SASS/SCSS",
-    "Redux",
+    "React.js",
     "Next.js",
-    "Vue.js",
-    "Bootstrap",
+    "Redux",
+    "HTML",
+    "CSS",
     "Tailwind CSS",
+    "RESTful APIs",
     "Node.js",
     "Express.js",
-    "Python",
-    "Django",
-    "FastAPI",
-    "RESTful APIs",
-    "GraphQL",
-    "Microservices",
-    "Serverless",
     "MongoDB",
-    "PostgreSQL",
-    "MySQL",
-    "Redis",
-    "Firebase",
-    "Supabase",
-    "AWS",
-    "Docker",
-    "Kubernetes",
-    "CI/CD",
+    "WebSockets",
+    "Unit Testing",
     "Git",
-    "GitHub Actions",
-    "Netlify",
-    "Vercel",
-    "Heroku",
-    "VS Code",
+    "Visual Studio Code",
+    "Jira",
     "Figma",
     "Postman",
-    "Jest",
-    "Cypress",
-    "Webpack",
-    "Babel",
-    "ESLint"
+    "Docker",
+    "Firebase",
+    "Github",
+    "DevTools",
+    "Webpack"
+  ],
+  "softSkills": [
+    "Communication",
+    "Team Collaboration",
+    "Proactivity",
+    "Problem-Solving",
+    "Growth Mindset",
+    "Can-do Attitude",
+    "Agile",
+    "Scrum",
+    "Debugging",
+    "Adaptability",
+    "Code Quality"
   ],
   "languages": [
     {
-      "language": "English",
-      "proficiency": "Native"
+      "name": "English",
+      "level": "Professional",
+      "proficiency": 95
     },
     {
-      "language": "Urdu",
-      "proficiency": "Native"
+      "name": "Urdu",
+      "level": "Native",
+      "proficiency": 100
     },
     {
-      "language": "Spanish",
-      "proficiency": "Intermediate"
-    },
-    {
-      "language": "French",
-      "proficiency": "Beginner"
+      "name": "German",
+      "level": "Intermediate",
+      "proficiency": 60
     }
   ],
-  "contact": {
-    "email": "awais.shahid@email.com",
-    "phone": "+1 (555) 123-4567",
-    "location": "San Francisco, CA",
-    "linkedin": "https://linkedin.com/in/awais-shahid",
+  "contactInfo": {
+    "phone": "+49 176 724 77802",
+    "email": "awaishahid.147@gmail.com",
+    "location": "Berlin, Germany",
+    "xing": "https://www.xing.com/profile/Awais_Shahid059038",
+    "linkedin": "https://www.linkedin.com/in/awais-shahid/",
     "github": "https://github.com/m-awais-shahid",
     "twitter": "https://twitter.com/awais_dev",
     "website": "https://awais-portfolio.netlify.app"
   },
   "socialLinks": {
+    "xing": "https://www.xing.com/profile/Awais_Shahid059038",
     "github": "https://github.com/m-awais-shahid",
-    "linkedin": "https://linkedin.com/in/awais-shahid",
+    "linkedin": "https://www.linkedin.com/in/awais-shahid/",
     "twitter": "https://twitter.com/awais_dev",
     "instagram": "https://instagram.com/awais_dev",
     "codepen": "https://codepen.io/awais-shahid"

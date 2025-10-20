@@ -44,7 +44,7 @@
   font-size: 14px;
   font-weight: 700;
   color: #000000;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   white-space: nowrap;
 }
@@ -113,9 +113,9 @@
   font-size: 11px;
   font-weight: 400;
   text-transform: uppercase;
+  letter-spacing: 0.03em;
   z-index: 3;
   text-shadow: none;
-  letter-spacing: 0.5px;
   border: 1px solid #333333;
 }
 
@@ -185,7 +185,7 @@
   color: #000000;
   margin-bottom: 2px;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.05em;
 }
 
 .attack-damage {
@@ -202,7 +202,7 @@
   margin-top: 2px;
   font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.03em;
 }
 
 /* Footer Section */
@@ -232,7 +232,7 @@
   font-weight: 400;
   text-transform: uppercase;
   font-size: 7px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.05em;
 }
 
 .footer-symbol {

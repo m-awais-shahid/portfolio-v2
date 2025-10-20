@@ -1,13 +1,22 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Fredoka+One:wght@400&family=Righteous:wght@400&family=Creepster:wght@400&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
+/* Import Minecraft Font */
+@font-face {
+  font-family: 'Minecraft';
+  src: url('../../../public/fonts/Minecraft.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Typography Variables */
 :root {
   /* Font Families */
-  --font-primary: 'Orbitron', 'Arial Black', Arial, sans-serif;
-  --font-heading: 'Fredoka One', 'Arial Black', Arial, sans-serif;
-  --font-pokemon: 'Righteous', 'Arial Black', Arial, sans-serif;
-  --font-mono: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+  --font-primary: 'Minecraft', 'Orbitron', 'Arial Black', Arial, sans-serif;
+  --font-heading: 'Minecraft', 'Fredoka One', 'Arial Black', Arial, sans-serif;
+  --font-pokemon: 'Minecraft', 'Righteous', 'Arial Black', Arial, sans-serif;
+  --font-mono: 'Minecraft', 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
 
   /* Font Sizes */
   --text-xs: 0.75rem;    /* 12px */
@@ -83,6 +92,8 @@ h1, .h1 {
   line-height: var(--leading-tight);
   color: var(--text-primary);
   margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
 h2, .h2 {
@@ -92,6 +103,8 @@ h2, .h2 {
   line-height: var(--leading-tight);
   color: var(--text-primary);
   margin-bottom: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
 }
 
 h3, .h3 {
@@ -101,6 +114,8 @@ h3, .h3 {
   line-height: var(--leading-snug);
   color: var(--text-primary);
   margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
 }
 
 h4, .h4 {
@@ -110,6 +125,8 @@ h4, .h4 {
   line-height: var(--leading-snug);
   color: var(--text-primary);
   margin-bottom: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 h5, .h5 {
@@ -119,6 +136,8 @@ h5, .h5 {
   line-height: var(--leading-snug);
   color: var(--text-primary);
   margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
 h6, .h6 {
@@ -128,6 +147,8 @@ h6, .h6 {
   line-height: var(--leading-normal);
   color: var(--text-primary);
   margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
 /* Body Text */
@@ -137,12 +158,16 @@ body, p, .body-text {
   font-weight: var(--font-normal);
   line-height: var(--leading-relaxed);
   color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 /* Small Text */
 small, .text-small {
   font-size: var(--text-sm);
   color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 
 /* Links */
@@ -150,6 +175,8 @@ a {
   color: var(--coffee-medium);
   text-decoration: none;
   transition: color 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 a:hover {
@@ -170,6 +197,8 @@ code, pre {
   padding: 0.125rem 0.25rem;
   border-radius: 0.25rem;
   color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 
 pre {
