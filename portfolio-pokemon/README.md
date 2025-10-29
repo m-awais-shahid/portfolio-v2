@@ -1,70 +1,188 @@
-# Getting Started with Create React App
+# Portfolio Pokemon - Developer Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive portfolio website built with React featuring a unique Pokemon card-inspired design and a comprehensive developer showcase.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+### 🎨 Design & Theme
+- **Pokemon Card Inspired Design** - Unique profile card with Pokemon-style layout
+- **Midnight Blue Developer Theme** - Professional tech-focused color scheme
+- **Minecraft Font** - Custom typography throughout the site
+- **Dark/Light Mode Toggle** - Seamless theme switching with persistence
+- **Responsive Design** - Optimized for all device sizes
 
-### `npm start`
+### 📱 Sections
+- **Introduction** - Pokemon card profile with About Me section
+- **Work Experience** - Professional experience with technology highlights
+- **Education** - Academic background and achievements
+- **Projects** - Featured projects with live demos and GitHub links
+- **Skills** - Technical skills and expertise areas
+- **Languages** - Language proficiency levels
+- **Contact Info** - Social media links and contact methods
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🛠️ Technical Features
+- **Smooth Scrolling Navigation** - Left-side navigation with active section highlighting
+- **Dynamic Backgrounds** - Unique gradient backgrounds for each section
+- **Interactive Elements** - Hover effects, transitions, and animations
+- **Theme Persistence** - User preferences saved in localStorage
+- **Optimized Performance** - Clean, efficient code with minimal dependencies
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🎯 Tech Stack
 
-### `npm test`
+- **Frontend**: React 18
+- **Styling**: CSS3 with CSS Variables
+- **Font**: Custom Minecraft Font
+- **Icons**: Custom SVG icons
+- **Build Tool**: Create React App
+- **Version Control**: Git
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Getting Started
 
-### `npm run build`
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/m-awais-shahid/portfolio-v2.git
+   cd portfolio-v2
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-### `npm run eject`
+3. **Start the development server**
+   ```bash
+   npm start
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Building for Production
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm run build
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This creates an optimized production build in the `build` folder.
 
-## Learn More
+## 📁 Project Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+src/
+├── components/           # React components
+│   ├── Introduction/     # Pokemon card & About Me
+│   ├── WorkExperience/   # Work experience section
+│   ├── Education/        # Education section
+│   ├── Projects/         # Projects showcase
+│   ├── Skills/           # Skills section
+│   ├── Languages/        # Language proficiency
+│   ├── ContactInfo/      # Contact information
+│   ├── Navigation/       # Left-side navigation
+│   └── Shared/           # Shared components (ThemeToggle)
+├── data/                 # Portfolio data
+│   └── portfolioData.json
+├── styles/               # CSS styles
+│   ├── themes.css        # Main theme system
+│   └── Introduction/     # Pokemon card styles
+└── public/               # Static assets
+    ├── fonts/            # Custom fonts
+    ├── icons/            # Custom icons
+    └── Introduction-Background.jpg
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🎨 Customization
 
-### Code Splitting
+### Updating Portfolio Data
+Edit `src/data/portfolioData.json` to update:
+- Personal information
+- Work experience
+- Education details
+- Projects
+- Skills
+- Languages
+- Contact information
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Theme Customization
+Modify `src/styles/themes.css` to customize:
+- Color schemes
+- Typography
+- Spacing
+- Component styles
 
-### Analyzing the Bundle Size
+### Adding New Sections
+1. Create component in appropriate folder
+2. Add to `src/components/index.js`
+3. Import and use in `src/App.js`
+4. Add navigation item in `src/components/Navigation/Navigation.js`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🌟 Key Features Explained
 
-### Making a Progressive Web App
+### Pokemon Card Design
+The profile section features a unique Pokemon trading card-inspired layout with:
+- Card borders that change color based on theme
+- Pokemon-style attack descriptions for skills
+- Authentic card layout and styling
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Theme System
+Comprehensive CSS variable system supporting:
+- Light and dark modes
+- Consistent color palette
+- Smooth transitions
+- Responsive design
 
-### Advanced Configuration
+### Navigation
+Left-side fixed navigation with:
+- Smooth scrolling to sections
+- Active section highlighting
+- Responsive positioning
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📱 Responsive Design
 
-### Deployment
+The website is fully responsive and optimized for:
+- Desktop (1200px+)
+- Tablet (768px - 1199px)
+- Mobile (320px - 767px)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🚀 Deployment
 
-### `npm run build` fails to minify
+The project is ready for deployment on any static hosting service:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Netlify**: Connect your GitHub repository
+- **Vercel**: Deploy with zero configuration
+- **GitHub Pages**: Use the build folder
+- **AWS S3**: Upload the build folder
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 👨‍💻 Author
+
+**Muhammad Awais Shahid**
+- GitHub: [@m-awais-shahid](https://github.com/m-awais-shahid)
+- LinkedIn: [Awais Shahid](https://www.linkedin.com/in/awais-shahid/)
+- Xing: [Awais Shahid](https://www.xing.com/profile/Awais_Shahid059038)
+
+## 🙏 Acknowledgments
+
+- Pokemon Company for design inspiration
+- React community for excellent documentation
+- Create React App team for the amazing tooling
+
+---
+
+⭐ If you found this project helpful, please give it a star!
