@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import portfolioData from '../../data/portfolioData.json';
 
 const ContactInfo = () => {
   const { contactInfo } = portfolioData;
+  const [emailCopied, setEmailCopied] = useState(false);
 
   const handleEmailCopy = async () => {
     try {
       await navigator.clipboard.writeText(contactInfo.email);
-      alert('Email copied to clipboard!');
+      setEmailCopied(true);
+      // Reset the text after 2 seconds
+      setTimeout(() => setEmailCopied(false), 2000);
     } catch (err) {
       // Fallback for older browsers
       const textArea = document.createElement('textarea');
@@ -16,14 +19,16 @@ const ContactInfo = () => {
       textArea.select();
       document.execCommand('copy');
       document.body.removeChild(textArea);
-      alert('Email copied to clipboard!');
+      setEmailCopied(true);
+      // Reset the text after 2 seconds
+      setTimeout(() => setEmailCopied(false), 2000);
     }
   };
 
   return (
     <div style={{ 
       padding: '4rem 2rem',
-      background: 'linear-gradient(135deg, #1A1A2E 0%, #16213E 100%)'
+      background: 'var(--bg-section-contact)'
     }}>
       <div style={{ 
         textAlign: 'center',
@@ -32,18 +37,21 @@ const ContactInfo = () => {
         <h2 style={{ 
           fontSize: '2.5rem',
           fontWeight: '700',
-          color: '#FFD700',
+          color: 'var(--text-accent)',
           marginBottom: '1rem',
           textTransform: 'uppercase',
-          letterSpacing: '0.15em'
+          letterSpacing: '0.15em',
+          textShadow: '0 2px 4px var(--shadow-primary)',
+          fontFamily: 'var(--font-heading)'
         }}>
           Contact Info
         </h2>
         <p style={{ 
           fontSize: '1.1rem',
-          color: 'rgba(255, 255, 255, 0.8)',
+          color: 'var(--text-secondary)',
           textTransform: 'uppercase',
-          letterSpacing: '0.05em'
+          letterSpacing: '0.05em',
+          fontFamily: 'var(--font-primary)'
         }}>
           Let's connect and work together
         </p>
@@ -54,39 +62,44 @@ const ContactInfo = () => {
         margin: '0 auto'
       }}>
         <div style={{ 
-          background: 'rgba(255, 255, 255, 0.1)',
-          border: '1px solid rgba(255, 255, 255, 0.2)',
+          background: 'var(--bg-card)',
+          border: '2px solid var(--border-primary)',
           borderRadius: '15px',
           padding: '3rem',
           backdropFilter: 'blur(10px)',
-          textAlign: 'center'
+          textAlign: 'center',
+          boxShadow: '0 8px 32px var(--shadow-card)',
+          transition: 'all 0.3s ease'
         }}>
           <div style={{ marginBottom: '2rem' }}>
             <h3 style={{ 
               fontSize: '1.8rem',
               fontWeight: '700',
-              color: '#FFD700',
+              color: 'var(--text-accent)',
               marginBottom: '1rem',
               textTransform: 'uppercase',
-              letterSpacing: '0.1em'
+              letterSpacing: '0.1em',
+              fontFamily: 'var(--font-heading)'
             }}>
               Muhammad Awais Shahid
             </h3>
             <p style={{ 
               fontSize: '1.2rem',
               fontWeight: '600',
-              color: '#FFFFFF',
+              color: 'var(--text-primary)',
               marginBottom: '0.5rem',
               textTransform: 'uppercase',
-              letterSpacing: '0.05em'
+              letterSpacing: '0.05em',
+              fontFamily: 'var(--font-primary)'
             }}>
               Software Engineer
             </p>
             <p style={{ 
               fontSize: '1rem',
-              color: 'rgba(255, 255, 255, 0.8)',
+              color: 'var(--text-secondary)',
               textTransform: 'uppercase',
-              letterSpacing: '0.05em'
+              letterSpacing: '0.05em',
+              fontFamily: 'var(--font-primary)'
             }}>
               {contactInfo.location}
             </p>
@@ -103,8 +116,8 @@ const ContactInfo = () => {
               target="_blank"
               rel="noopener noreferrer"
               style={{ 
-                background: 'linear-gradient(135deg, #FFD700 0%, #FFA500 100%)',
-                color: '#000000',
+                background: 'var(--btn-primary)',
+                color: '#ffffff',
                 padding: '1rem 1.5rem',
                 borderRadius: '12px',
                 textDecoration: 'none',
@@ -118,7 +131,10 @@ const ContactInfo = () => {
                 justifyContent: 'center',
                 gap: '0.5rem',
                 minWidth: '200px',
-                minHeight: '60px'
+                minHeight: '60px',
+                fontFamily: 'var(--font-primary)',
+                boxShadow: '0 4px 15px var(--shadow-primary)',
+                border: '2px solid var(--border-primary)'
               }}
             >
               <img 
@@ -138,8 +154,8 @@ const ContactInfo = () => {
               target="_blank"
               rel="noopener noreferrer"
               style={{ 
-                background: 'linear-gradient(135deg, #0077B5 0%, #005885 100%)',
-                color: '#FFFFFF',
+                background: 'var(--btn-secondary)',
+                color: '#ffffff',
                 padding: '1rem 1.5rem',
                 borderRadius: '12px',
                 textDecoration: 'none',
@@ -153,7 +169,10 @@ const ContactInfo = () => {
                 justifyContent: 'center',
                 gap: '0.5rem',
                 minWidth: '200px',
-                minHeight: '60px'
+                minHeight: '60px',
+                fontFamily: 'var(--font-primary)',
+                boxShadow: '0 4px 15px var(--shadow-secondary)',
+                border: '2px solid var(--border-secondary)'
               }}
             >
               <img 
@@ -172,8 +191,8 @@ const ContactInfo = () => {
               target="_blank"
               rel="noopener noreferrer"
               style={{ 
-                background: 'linear-gradient(135deg, #333333 0%, #000000 100%)',
-                color: '#FFFFFF',
+                background: 'var(--btn-accent)',
+                color: '#ffffff',
                 padding: '1rem 1.5rem',
                 borderRadius: '12px',
                 textDecoration: 'none',
@@ -187,7 +206,10 @@ const ContactInfo = () => {
                 justifyContent: 'center',
                 gap: '0.5rem',
                 minWidth: '200px',
-                minHeight: '60px'
+                minHeight: '60px',
+                fontFamily: 'var(--font-primary)',
+                boxShadow: '0 4px 15px var(--shadow-primary)',
+                border: '2px solid var(--border-primary)'
               }}
             >
               <img 
@@ -210,11 +232,11 @@ const ContactInfo = () => {
             <button 
               onClick={handleEmailCopy}
               style={{ 
-                background: 'linear-gradient(135deg, #E74C3C 0%, #C0392B 100%)',
-                color: '#FFFFFF',
+                background: 'var(--btn-danger)',
+                color: '#ffffff',
                 padding: '1rem 1.5rem',
                 borderRadius: '12px',
-                border: 'none',
+                border: '2px solid var(--border-primary)',
                 fontSize: '1rem',
                 fontWeight: '700',
                 textTransform: 'uppercase',
@@ -226,7 +248,9 @@ const ContactInfo = () => {
                 justifyContent: 'center',
                 gap: '0.5rem',
                 minWidth: '200px',
-                minHeight: '60px'
+                minHeight: '60px',
+                fontFamily: 'var(--font-primary)',
+                boxShadow: '0 4px 15px var(--shadow-primary)'
               }}
             >
               <img 
@@ -237,28 +261,30 @@ const ContactInfo = () => {
                   height: '20px'
                 }} 
               />
-              Copy Email
+{emailCopied ? 'Email Copied!' : 'Copy Email'}
             </button>
           </div>
 
           <div style={{ 
-            borderTop: '1px solid rgba(255, 255, 255, 0.2)',
+            borderTop: '1px solid var(--border-muted)',
             paddingTop: '2rem'
           }}>
             <p style={{ 
               fontSize: '1rem',
-              color: 'rgba(255, 255, 255, 0.8)',
+              color: 'var(--text-secondary)',
               textTransform: 'uppercase',
               letterSpacing: '0.05em',
-              marginBottom: '1rem'
+              marginBottom: '1rem',
+              fontFamily: 'var(--font-primary)'
             }}>
               Ready to collaborate on your next project?
             </p>
             <p style={{ 
               fontSize: '0.9rem',
-              color: 'rgba(255, 255, 255, 0.6)',
+              color: 'var(--text-muted)',
               textTransform: 'uppercase',
-              letterSpacing: '0.05em'
+              letterSpacing: '0.05em',
+              fontFamily: 'var(--font-primary)'
             }}>
               Let's build something amazing together!
             </p>

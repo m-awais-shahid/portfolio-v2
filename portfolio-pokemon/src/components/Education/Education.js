@@ -7,7 +7,7 @@ const Education = () => {
   return (
     <div style={{ 
       padding: '4rem 2rem',
-      background: 'linear-gradient(135deg, #2C3E50 0%, #34495E 100%)'
+      background: 'var(--bg-section-education)'
     }}>
       <div style={{ 
         textAlign: 'center',
@@ -16,18 +16,21 @@ const Education = () => {
         <h2 style={{ 
           fontSize: '2.5rem',
           fontWeight: '700',
-          color: '#FFD700',
+          color: 'var(--text-accent)',
           marginBottom: '1rem',
           textTransform: 'uppercase',
-          letterSpacing: '0.15em'
+          letterSpacing: '0.15em',
+          textShadow: '0 2px 4px var(--shadow-primary)',
+          fontFamily: 'var(--font-heading)'
         }}>
           Education
         </h2>
         <p style={{ 
           fontSize: '1.1rem',
-          color: 'rgba(255, 255, 255, 0.8)',
+          color: 'var(--text-secondary)',
           textTransform: 'uppercase',
-          letterSpacing: '0.05em'
+          letterSpacing: '0.05em',
+          fontFamily: 'var(--font-primary)'
         }}>
           My academic journey and certifications
         </p>
@@ -41,63 +44,58 @@ const Education = () => {
           <div
             key={index}
             style={{ 
-              background: 'rgba(255, 255, 255, 0.1)',
-              border: '1px solid rgba(255, 255, 255, 0.2)',
-              borderRadius: '10px',
+              background: 'var(--bg-card)',
+              border: '2px solid var(--border-primary)',
+              borderRadius: '15px',
               padding: '2rem',
-              marginBottom: '2rem'
+              marginBottom: '2rem',
+              boxShadow: '0 8px 32px var(--shadow-card)',
+              transition: 'all 0.3s ease'
             }}
           >
             <div style={{ marginBottom: '1rem' }}>
               <h3 style={{ 
                 fontSize: '1.5rem',
                 fontWeight: '700',
-                color: '#FFD700',
+                color: 'var(--text-accent)',
                 marginBottom: '0.5rem',
                 textTransform: 'uppercase',
-                letterSpacing: '0.12em'
+                letterSpacing: '0.12em',
+                fontFamily: 'var(--font-heading)'
               }}>
                 {edu.degree}
               </h3>
               <h4 style={{ 
                 fontSize: '1.2rem',
                 fontWeight: '600',
-                color: '#FFFFFF',
+                color: 'var(--text-primary)',
                 marginBottom: '0.3rem',
                 textTransform: 'uppercase',
-                letterSpacing: '0.1em'
+                letterSpacing: '0.1em',
+                fontFamily: 'var(--font-primary)'
               }}>
                 {edu.institution}
               </h4>
               <p style={{ 
                 fontSize: '1rem',
-                color: 'rgba(255, 255, 255, 0.7)',
+                color: 'var(--text-secondary)',
                 marginBottom: '1rem',
                 textTransform: 'uppercase',
-                letterSpacing: '0.05em'
+                letterSpacing: '0.05em',
+                fontFamily: 'var(--font-primary)'
               }}>
                 {edu.duration} • {edu.location}
               </p>
-              {edu.gpa && (
-                <p style={{ 
-                  fontSize: '1rem',
-                  color: '#FFD700',
-                  fontWeight: '600',
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.05em'
-                }}>
-                  GPA: {edu.gpa}
-                </p>
-              )}
             </div>
             
             <div>
               <p style={{ 
                 fontSize: '1rem',
                 lineHeight: '1.6',
-                color: '#FFFFFF',
+                color: 'var(--text-primary)',
                 textTransform: 'uppercase',
-                letterSpacing: '0.05em'
+                letterSpacing: '0.05em',
+                fontFamily: 'var(--font-primary)'
               }}>
                 {edu.description}
               </p>

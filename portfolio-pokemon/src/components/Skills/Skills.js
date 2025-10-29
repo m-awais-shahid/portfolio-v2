@@ -7,7 +7,7 @@ const Skills = () => {
   return (
     <div style={{ 
       padding: '4rem 2rem',
-      background: 'linear-gradient(135deg, #E74C3C 0%, #C0392B 100%)'
+      background: 'var(--bg-section-skills)'
     }}>
       <div style={{ 
         textAlign: 'center',
@@ -16,18 +16,21 @@ const Skills = () => {
         <h2 style={{ 
           fontSize: '2.5rem',
           fontWeight: '700',
-          color: '#FFD700',
+          color: 'var(--text-accent)',
           marginBottom: '1rem',
           textTransform: 'uppercase',
-          letterSpacing: '0.15em'
+          letterSpacing: '0.15em',
+          textShadow: '0 2px 4px var(--shadow-primary)',
+          fontFamily: 'var(--font-heading)'
         }}>
           Skills
         </h2>
         <p style={{ 
           fontSize: '1.1rem',
-          color: 'rgba(255, 255, 255, 0.8)',
+          color: 'var(--text-secondary)',
           textTransform: 'uppercase',
-          letterSpacing: '0.05em'
+          letterSpacing: '0.05em',
+          fontFamily: 'var(--font-primary)'
         }}>
           Technologies and tools I work with
         </p>
@@ -47,21 +50,23 @@ const Skills = () => {
             <div
               key={index}
               style={{ 
-                background: 'rgba(255, 255, 255, 0.1)',
-                border: '1px solid rgba(255, 255, 255, 0.2)',
-                borderRadius: '10px',
+                background: 'var(--bg-card)',
+                border: '2px solid var(--border-primary)',
+                borderRadius: '15px',
                 padding: '1.5rem',
                 textAlign: 'center',
                 backdropFilter: 'blur(10px)',
-                transition: 'transform 0.3s ease'
+                transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+                boxShadow: '0 8px 32px var(--shadow-card)'
               }}
             >
               <span style={{ 
                 fontSize: '1.1rem',
                 fontWeight: '600',
-                color: '#FFFFFF',
+                color: 'var(--text-primary)',
                 textTransform: 'uppercase',
-                letterSpacing: '0.05em'
+                letterSpacing: '0.05em',
+                fontFamily: 'var(--font-primary)'
               }}>
                 {skill}
               </span>

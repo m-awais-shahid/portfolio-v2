@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <div style={{ 
       padding: '4rem 2rem',
-      background: 'linear-gradient(135deg, #8E44AD 0%, #9B59B6 100%)'
+      background: 'var(--bg-section-projects)'
     }}>
       <div style={{ 
         textAlign: 'center',
@@ -16,18 +16,21 @@ const Projects = () => {
         <h2 style={{ 
           fontSize: '2.5rem',
           fontWeight: '700',
-          color: '#FFD700',
+          color: 'var(--text-accent)',
           marginBottom: '1rem',
           textTransform: 'uppercase',
-          letterSpacing: '0.15em'
+          letterSpacing: '0.15em',
+          textShadow: '0 2px 4px var(--shadow-primary)',
+          fontFamily: 'var(--font-heading)'
         }}>
           Projects
         </h2>
         <p style={{ 
           fontSize: '1.1rem',
-          color: 'rgba(255, 255, 255, 0.8)',
+          color: 'var(--text-secondary)',
           textTransform: 'uppercase',
-          letterSpacing: '0.05em'
+          letterSpacing: '0.05em',
+          fontFamily: 'var(--font-primary)'
         }}>
           Showcase of my development work
         </p>
@@ -44,22 +47,24 @@ const Projects = () => {
           <div
             key={index}
             style={{ 
-              background: 'rgba(255, 255, 255, 0.1)',
-              border: '1px solid rgba(255, 255, 255, 0.2)',
+              background: 'var(--bg-card)',
+              border: '2px solid var(--border-primary)',
               borderRadius: '15px',
               padding: '2rem',
               backdropFilter: 'blur(10px)',
-              transition: 'transform 0.3s ease, box-shadow 0.3s ease'
+              transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+              boxShadow: '0 8px 32px var(--shadow-card)'
             }}
           >
             <div style={{ marginBottom: '1.5rem' }}>
               <h3 style={{ 
                 fontSize: '1.5rem',
                 fontWeight: '700',
-                color: '#FFD700',
+                color: 'var(--text-accent)',
                 marginBottom: '0.5rem',
                 textTransform: 'uppercase',
-                letterSpacing: '0.12em'
+                letterSpacing: '0.12em',
+                fontFamily: 'var(--font-heading)'
               }}>
                 {project.name}
               </h3>
@@ -69,10 +74,12 @@ const Projects = () => {
               <p style={{ 
                 fontSize: '1rem',
                 lineHeight: '1.6',
-                color: '#FFFFFF',
+                color: 'var(--text-primary)',
                 marginBottom: '1.5rem',
                 textTransform: 'uppercase',
-                letterSpacing: '0.05em'
+                letterSpacing: '0.05em',
+                textAlign: 'center',
+                fontFamily: 'var(--font-primary)'
               }}>
                 {project.description}
               </p>
@@ -81,59 +88,65 @@ const Projects = () => {
                 <h5 style={{ 
                   fontSize: '1.1rem',
                   fontWeight: '600',
-                  color: '#FFD700',
+                  color: 'var(--text-accent)',
                   marginBottom: '1rem',
                   textTransform: 'uppercase',
-                  letterSpacing: '0.06em'
+                  letterSpacing: '0.06em',
+                  fontFamily: 'var(--font-heading)'
                 }}>
                   Technologies Used:
                 </h5>
                 <div style={{ 
                   display: 'flex',
                   flexWrap: 'wrap',
+                  alignItems: 'center',
                   gap: '0.5rem'
                 }}>
                   {project.technologies.map((tech, idx) => (
                     <span key={idx} style={{ 
-                      background: 'rgba(255, 215, 0, 0.2)',
-                      color: '#FFD700',
-                      padding: '0.3rem 0.8rem',
-                      borderRadius: '15px',
+                      background: 'var(--btn-primary)',
+                      color: '#ffffff',
+                      padding: '0.4rem 1rem',
+                      borderRadius: '20px',
                       fontSize: '0.9rem',
-                      fontWeight: '500',
+                      fontWeight: '700',
                       textTransform: 'uppercase',
-                      letterSpacing: '0.03em',
-                      border: '1px solid rgba(255, 215, 0, 0.3)'
+                      letterSpacing: '0.05em',
+                      border: '2px solid var(--border-primary)',
+                      fontFamily: 'var(--font-primary)',
+                      boxShadow: '0 4px 15px var(--shadow-primary)',
+                      transition: 'all 0.3s ease'
                     }}>
                       {tech}
                     </span>
                   ))}
+                  <a 
+                    href={project.id === 3 ? project.githubLink : (project.liveLink || project.githubLink)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ 
+                      background: 'var(--btn-link)',
+                      color: '#FFFFFF',
+                      padding: '0.75rem 1.5rem',
+                      borderRadius: '12px',
+                      textDecoration: 'none',
+                      fontSize: '0.9rem',
+                      fontWeight: '700',
+                      textTransform: 'uppercase',
+                      letterSpacing: '0.05em',
+                      transition: 'all 0.3s ease',
+                      fontFamily: 'var(--font-primary)',
+                      boxShadow: '0 4px 15px var(--btn-link-shadow)',
+                      border: '2px solid var(--btn-link-border)',
+                      display: 'inline-block',
+                      minWidth: '140px',
+                      textAlign: 'center',
+                      marginLeft: 'auto'
+                    }}
+                  >
+                    Go to Link
+                  </a>
                 </div>
-              </div>
-              
-              <div style={{ 
-                display: 'flex',
-                justifyContent: 'center'
-              }}>
-                <a 
-                  href={project.liveLink || project.githubLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ 
-                    background: '#FFD700',
-                    color: '#000000',
-                    padding: '0.5rem 1rem',
-                    borderRadius: '8px',
-                    textDecoration: 'none',
-                    fontSize: '0.9rem',
-                    fontWeight: '600',
-                    textTransform: 'uppercase',
-                    letterSpacing: '0.05em',
-                    transition: 'all 0.3s ease'
-                  }}
-                >
-                  Go to Link
-                </a>
               </div>
             </div>
           </div>

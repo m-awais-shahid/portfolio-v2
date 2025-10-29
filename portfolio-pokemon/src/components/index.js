@@ -19,5 +19,8 @@ export * from './Languages';
 // Contact Info Components
 export * from './ContactInfo';
 
+// Navigation Components
+export * from './Navigation';
+
 // Shared Components
 export * from './Shared';

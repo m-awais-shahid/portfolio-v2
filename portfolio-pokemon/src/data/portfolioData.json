@@ -59,10 +59,10 @@
   "projects": [
     {
       "id": 1,
-      "name": "Joey Joey: Empowering Social Events",
-      "description": "Developed dynamic event interfaces using React and RSVP — increasing user engagement by 30%. A comprehensive social events platform that enables users to create, discover, and manage social events with real-time RSVP functionality.",
+      "name": "Joey Joey",
+      "description": "A comprehensive social events platform built with React that enables users to create, discover, and manage events with real-time RSVP functionality, increasing user engagement by 30%.",
       "technologies": ["React", "JavaScript", "Node.js"],
-      "liveLink": "https://joey-joey-demo.vercel.app",
+      "liveLink": "https://www.joeyjoey.co/",
       "githubLink": "https://github.com/m-awais-shahid/joey-joey",
       "image": "/images/projects/joey-joey.jpg",
       "featured": true,
@@ -70,22 +70,22 @@
     },
     {
       "id": 2,
-      "name": "Shopper: Promoting Eco-Friendly Shopping Habits",
-      "description": "Developed a strategic plan to promote eco-friendly shopping, designed to reach 1000+ users and increase sustainable fashion awareness. An e-commerce platform focused on sustainable and eco-friendly products with educational content about environmental impact.",
-      "technologies": ["React.js", "Express.js", "Node.js","mysql"],
+      "name": "Ahadees Analysis",
+      "description": "A data analysis project built with Java and JUnit that cleans, validates, and tests Ahadees collections to ensure data reliability and consistency for accurate religious text analysis.",
+      "technologies": ["Java", "JUnit", "mysql"],
       "liveLink": "https://shopper-eco-demo.netlify.app",
-      "githubLink": "https://github.com/m-awais-shahid/shopper-eco",
+      "githubLink": "https://github.com/m-awais-shahid/Hadees-Testing-java",
       "image": "/images/projects/shopper.jpg",
       "featured": true,
       "duration": "07/2022 – 09/2022"
     },
     {
       "id": 3,
-      "name": "CL Bot: AI Assistant for Productivity",
-      "description": "Launched an intelligent assistant for task scheduling — reducing missed tasks by 200+ per month. An AI-powered productivity bot that helps users manage their schedules, set reminders, and optimize their daily workflow.",
+      "name": "CL Bot",
+      "description": "An AI-powered productivity bot built with React and Node.js that helps users manage schedules, set reminders, and optimize daily workflow, reducing missed tasks by 200+ per month.",
       "technologies": ["React.js", "Node.js", "MongoDB"],
       "liveLink": "https://cl-bot-demo.herokuapp.com",
-      "githubLink": "https://github.com/m-awais-shahid/cl-bot",
+      "githubLink": "https://github.com/m-awais-shahid/Command-Based-Bot",
       "image": "/images/projects/cl-bot.jpg",
       "featured": false,
       "duration": "10/2021 – 12/2021"

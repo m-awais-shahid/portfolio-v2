@@ -10,33 +10,37 @@ const AboutMe = () => {
       maxWidth: '600px',
       height: '520px',
       padding: '2rem',
-      background: 'var(--bg-card, rgba(255, 255, 255, 0.9))',
+      background: 'var(--bg-card)',
       borderRadius: '15px',
-      boxShadow: '0 8px 32px var(--shadow-light, rgba(0, 0, 0, 0.1))',
-      border: '2px solid var(--border-primary, #D4C4B0)',
+      boxShadow: '0 8px 32px var(--shadow-card)',
+      border: '2px solid var(--border-primary)',
       backdropFilter: 'blur(10px)',
       display: 'flex',
       flexDirection: 'column',
-      justifyContent: 'center'
+      justifyContent: 'flex-start',
+      transition: 'all 0.3s ease'
     }}>
       <h2 style={{
         fontFamily: 'var(--font-heading)',
-        fontSize: '2rem',
+        fontSize: '3rem',
         fontWeight: '700',
-        color: 'var(--text-secondary, #8B4513)',
-        marginBottom: '1.5rem',
+        color: 'var(--text-accent)',
+        marginBottom: '1rem',
         textTransform: 'uppercase',
-        letterSpacing: '1px'
+        letterSpacing: '1px',
+        textShadow: '0 2px 4px var(--shadow-primary)'
       }}>
         About Me
       </h2>
       <p style={{
-        fontFamily: 'var(--font-primary)',
-        fontSize: '1.1rem',
+        fontSize: '1.4rem',
         lineHeight: '1.7',
-        color: 'var(--text-primary, #5D4E37)',
-        fontWeight: '400',
-        textAlign: 'justify'
+        color: 'var(--text-primary)',
+        marginBottom: '1.5rem',
+        textTransform: 'uppercase',
+        letterSpacing: '0.05em',
+        fontFamily: 'var(--font-primary)',
+        textAlign: 'left'
       }}>
         {personalInfo.description}
       </p>

@@ -7,7 +7,7 @@ const Languages = () => {
   return (
     <div style={{ 
       padding: '4rem 2rem',
-      background: 'linear-gradient(135deg, #16A085 0%, #27AE60 100%)'
+      background: 'var(--bg-section-languages)'
     }}>
       <div style={{ 
         textAlign: 'center',
@@ -16,18 +16,21 @@ const Languages = () => {
         <h2 style={{ 
           fontSize: '2.5rem',
           fontWeight: '700',
-          color: '#FFD700',
+          color: 'var(--text-accent)',
           marginBottom: '1rem',
           textTransform: 'uppercase',
-          letterSpacing: '0.15em'
+          letterSpacing: '0.15em',
+          textShadow: '0 2px 4px var(--shadow-primary)',
+          fontFamily: 'var(--font-heading)'
         }}>
           Languages
         </h2>
         <p style={{ 
           fontSize: '1.1rem',
-          color: 'rgba(255, 255, 255, 0.8)',
+          color: 'var(--text-secondary)',
           textTransform: 'uppercase',
-          letterSpacing: '0.05em'
+          letterSpacing: '0.05em',
+          fontFamily: 'var(--font-primary)'
         }}>
           Communication skills across different languages
         </p>
@@ -46,31 +49,35 @@ const Languages = () => {
             <div
               key={index}
               style={{ 
-                background: 'rgba(255, 255, 255, 0.1)',
-                border: '1px solid rgba(255, 255, 255, 0.2)',
+                background: 'var(--bg-card)',
+                border: '2px solid var(--border-primary)',
                 borderRadius: '15px',
                 padding: '2rem',
                 backdropFilter: 'blur(10px)',
-                textAlign: 'center'
+                textAlign: 'center',
+                boxShadow: '0 8px 32px var(--shadow-card)',
+                transition: 'all 0.3s ease'
               }}
             >
               <div>
                 <h3 style={{ 
                   fontSize: '2rem',
                   fontWeight: '700',
-                  color: '#FFD700',
+                  color: 'var(--text-accent)',
                   marginBottom: '0.5rem',
                   textTransform: 'uppercase',
-                  letterSpacing: '0.1em'
+                  letterSpacing: '0.1em',
+                  fontFamily: 'var(--font-heading)'
                 }}>
                   {language.name}
                 </h3>
                 <p style={{ 
                   fontSize: '1.2rem',
                   fontWeight: '600',
-                  color: '#FFFFFF',
+                  color: 'var(--text-primary)',
                   textTransform: 'uppercase',
-                  letterSpacing: '0.05em'
+                  letterSpacing: '0.05em',
+                  fontFamily: 'var(--font-primary)'
                 }}>
                   {language.level}
                 </p>

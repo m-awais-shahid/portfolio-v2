@@ -1,10 +1,5 @@
 /* Import our custom styles */
-@import './styles/Shared/colors.css';
-@import './styles/Shared/typography.css';
-@import './styles/Shared/components.css';
-@import './styles/Shared/themes.css';
-@import './styles/Introduction/pokemon-card.css';
-@import './styles/WorkExperience/work-experience.css';
+@import './styles/themes.css';
 
 /* Global Reset and Base Styles */
 * {
@@ -25,11 +20,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: var(--font-primary);
-  font-size: var(--text-base);
-  font-weight: var(--font-normal);
-  line-height: var(--leading-relaxed);
-  color: var(--text-secondary);
-  background: var(--gradient-primary, linear-gradient(135deg, #F7F3F0 0%, #E8DDD4 100%));
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text-primary);
+  background: var(--bg-gradient);
   background-attachment: fixed;
   background-size: cover;
   transition: background 0.3s ease, color 0.3s ease;
@@ -42,7 +37,7 @@ body {
 
 /* Focus styles for accessibility */
 *:focus {
-  outline: 2px solid var(--focus-color);
+  outline: 2px solid var(--border-primary);
   outline-offset: 2px;
 }
 
@@ -53,13 +48,13 @@ body {
 
 /* Selection styles */
 ::selection {
-  background-color: var(--coffee-accent);
-  color: var(--text-primary);
+  background-color: var(--text-accent);
+  color: var(--text-inverse);
 }
 
 ::-moz-selection {
-  background-color: var(--coffee-accent);
-  color: var(--text-primary);
+  background-color: var(--text-accent);
+  color: var(--text-inverse);
 }
 
 /* Scrollbar styles */
@@ -72,18 +67,18 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--coffee-medium);
+  background: var(--border-primary);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--coffee-dark);
+  background: var(--text-accent);
 }
 
 /* Code styles */
 code {
-  font-family: var(--font-mono);
-  background-color: var(--bg-tertiary);
+  font-family: var(--font-primary);
+  background-color: var(--bg-card);
   padding: 0.125rem 0.25rem;
   border-radius: 0.25rem;
   color: var(--text-primary);
