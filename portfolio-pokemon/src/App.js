@@ -8,11 +8,10 @@ import { Projects } from './components/Projects';
 import { Skills } from './components/Skills';
 import { Languages } from './components/Languages';
 import { ContactInfo } from './components/ContactInfo';
-import './App.css';
 
 function App() {
   return (
-    <div className="App" style={{ 
+    <div style={{ 
       minHeight: '100vh',
       width: '100vw',
       position: 'relative'
